@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Ultima";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/UltimaPro-Bold/UltimaPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/UltimaPro-Bold/UltimaPro-Bold.woff") format("woff"), url("../fonts/UltimaPro-Bold/UltimaPro-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: "Ultima";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/UltimaPro-Light/UltimaProLt.eot?#iefix") format("embedded-opentype"), url("../fonts/UltimaPro-Light/UltimaProLt.woff") format("woff"), url("../fonts/UltimaPro-Light/UltimaProLt.ttf") format("truetype"); }
+@font-face {
+  font-family: "Ultima";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/UltimaPro-Black/UltimaProBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/UltimaPro-Black/UltimaProBlack.woff") format("woff"), url("../fonts/UltimaPro-Black/UltimaProBlack.ttf") format("truetype"); }
+@font-face {
+  font-family: "CeraPro";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/CeraPro-Thin.ttf") format("truetype"); }
+
+/*# sourceMappingURL=fonts.css.map */
