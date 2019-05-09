@@ -836,14 +836,17 @@ header {
     .menu .menu_li p {
       color: white;
       font-size: 46px; }
-    .menu .menu_li .list_menu li {
-      list-style-type: none;
-      padding: 15px 0px; }
-      .menu .menu_li .list_menu li a {
-        color: white;
-        font-size: 18px; }
-        .menu .menu_li .list_menu li a:hover {
-          text-decoration: none; }
+    .menu .menu_li .list_menu {
+      padding: 0px; }
+      .menu .menu_li .list_menu li {
+        list-style-type: none;
+        padding: 15px 0px;
+        text-align: center; }
+        .menu .menu_li .list_menu li a {
+          color: white;
+          font-size: 18px; }
+          .menu .menu_li .list_menu li a:hover {
+            text-decoration: none; }
     .menu .menu_li .lang_and_soc {
       width: 80%; }
       .menu .menu_li .lang_and_soc .lang ul,

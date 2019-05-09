@@ -35,6 +35,9 @@
     header .lang_and_soc .lang, header .lang_and_soc .soc {
         width: 35%;
     }
+    .menu {
+        width: 42%;
+    }
 }
 
 /* Medium Devices, Desktops */
@@ -84,6 +87,9 @@
     }
     .footer .logo_and_link .link {
         height: 100%;
+    }
+    .menu .menu_li .lang_and_soc .lang ul, .menu .menu_li .lang_and_soc .soc ul {
+        padding: 0px;
     }
 
 }
@@ -152,6 +158,12 @@
     }
     .page_4 .contact p {
         font-size: 12px;
+    }
+    .menu {
+        width: 100%;
+    }
+    .list_menu {
+        padding: 0px;
     }
 }
 
