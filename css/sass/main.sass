@@ -871,3 +871,57 @@ header
 	background: #171715
 	z-index: 99
 	transition: all 1s ease
+	align-items: center
+	justify-content: center
+	display: flex
+	.menu_li
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		width: 100%
+		height: 70%
+		p
+			color: white
+			font-size: 46px
+		.list_menu
+			li
+				list-style-type: none
+				padding: 15px 0px
+				a
+					color: white
+					font-size:  18px
+					&:hover
+						text-decoration: none
+		.lang_and_soc
+			width: 80%
+			.lang,
+			.soc
+				ul
+					display: flex
+					justify-content: space-between
+					li
+						list-style-type: none
+						width: 40px
+						height: 40px
+						display: flex
+						align-items: center
+						justify-content: center
+						margin: 20px
+						padding: 20px
+						a
+							color: white
+							font-size: 18px
+							padding: 20px
+							&:hover
+								text-decoration: none
+			.soc
+				ul
+					li
+						border-radius: 50%
+						border: 1px solid white
+			.lang
+				ul
+					li.active
+						border-radius: 50%
+						border: 1px solid white
