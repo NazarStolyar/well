@@ -10,148 +10,15 @@
 	<link rel="stylesheet" href="libs/fullPage/onepage-scroll.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="libs/animate/animate.min.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/slick/slick-theme.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
-<div class="spot">
-	<svg class="spot1" viewbox='0 0 100 100'>
-		<defs>
-			<filter id='goo'>
-				<feGaussianBlur in='SourceGraphic' stdDeviation='10' result='blur' />
-				<feColorMatrix in='blur' mode='matrix' values='1 0 0 0 0
-                                                           0 1 0 0 0
-                                                           0 0 1 0 0
-                                                           0 0 0 40 -3' result='goo' />
-				<feColorMatrix in='goo' mode='matrix' values='1 0 0 0 0
-                                                           0 1 0 0 0
-                                                           0 0 1 0 0
-                                                           0 0 0 10 -3' result='res' />
-				<feBlend in='SourceGraphic' in2='res' />
-			</filter>
-			<linearGradient id='my-gradient-1'>
-				<stop offset='5%'  stop-color='purple' />
-				<stop offset='95%' stop-color='white' />
-			</linearGradient>
-		</defs>
-		<mask id='my-mask-1'>
-			<rect x='0' y='0' height='100' width='100' fill='black' />
-			<g filter='url(#goo)'>
-				<rect x='0' y='0' height='100' width='100' fill='transparent' />
-				<circle cx='40' cy='40' r='5' fill='white' />
-				<circle cx='65' cy='55' r='5' fill='white' />
-				<circle cx='45' cy='65' r='5' fill='white' />
-				<circle cx='30' cy='40' r='5' fill='white' />
-				<circle cx='55' cy='30' r='5' fill='white' />
-				<circle cx='60' cy='50' r='5' fill='white' />
-				<circle cx='50' cy='50' r='5' fill='white' />
-			</g>
-		</mask>
-		<rect x='0' y='0' height='100' width='100' fill='url(#my-gradient-1)' mask='url(#my-mask-1)' opacity='0.1'/>
-	</svg>
-	<svg class="spot2" viewbox='0 0 100 100'>
-		<defs>
-			<filter id='goo_1'>
-				<feGaussianBlur in='SourceGraphic' stdDeviation='10' result='blur' />
-				<feColorMatrix in='blur' mode='matrix' values='1 0 0 0 0
-                                                           0 1 0 0 0
-                                                           0 0 1 0 0
-                                                           0 0 0 40 -3' result='goo' />
-				<feColorMatrix in='goo_1' mode='matrix' values='1 0 0 0 0
-                                                           0 1 0 0 0
-                                                           0 0 1 0 0
-                                                           0 0 0 10 -3' result='res' />
-				<feBlend in='SourceGraphic' in2='res' />
-			</filter>
-			<linearGradient id='my-gradient-2'>
-				<stop offset='5%'  stop-color='purple' />
-				<stop offset='95%' stop-color='white' />
-			</linearGradient>
-		</defs>
-		<mask id='my-mask-2'>
-			<rect x='0' y='0' height='100' width='100' fill='black' />
-			<g filter='url(#goo_1)'>
-				<rect x='0' y='0' height='100' width='100' fill='transparent' />
-				<circle cx='40' cy='40' r='5' fill='white' />
-				<circle cx='65' cy='55' r='5' fill='white' />
-				<circle cx='45' cy='65' r='5' fill='white' />
-				<circle cx='30' cy='40' r='5' fill='white' />
-				<circle cx='55' cy='30' r='5' fill='white' />
-				<circle cx='60' cy='50' r='5' fill='white' />
-				<circle cx='50' cy='50' r='5' fill='white' />
-			</g>
-		</mask>
-		<rect x='0' y='0' height='100' width='100' fill='url(#my-gradient-2)' mask='url(#my-mask-2)' opacity='0.1'/>
-	</svg>
-	<svg class="spot3" viewbox='0 0 100 100'>
-		<defs>
-			<filter id='goo_3'>
-				<feGaussianBlur in='SourceGraphic' stdDeviation='10' result='blur' />
-				<feColorMatrix in='blur' mode='matrix' values='1 0 0 0 0
-                                                           0 1 0 0 0
-                                                           0 0 1 0 0
-                                                           0 0 0 40 -3' result='goo' />
-				<feColorMatrix in='goo_1' mode='matrix' values='1 0 0 0 0
-                                                           0 1 0 0 0
-                                                           0 0 1 0 0
-                                                           0 0 0 10 -3' result='res' />
-				<feBlend in='SourceGraphic' in2='res' />
-			</filter>
-			<linearGradient id='my-gradient-3'>
-				<stop offset='5%'  stop-color='purple' />
-				<stop offset='95%' stop-color='white' />
-			</linearGradient>
-		</defs>
-		<mask id='my-mask-3'>
-			<rect x='0' y='0' height='100' width='100' fill='black' />
-			<g filter='url(#goo_3)'>
-				<rect x='0' y='0' height='100' width='100' fill='transparent' />
-				<circle cx='40' cy='40' r='5' fill='white' />
-				<circle cx='65' cy='55' r='5' fill='white' />
-				<circle cx='45' cy='65' r='5' fill='white' />
-				<circle cx='30' cy='40' r='5' fill='white' />
-				<circle cx='55' cy='30' r='5' fill='white' />
-				<circle cx='60' cy='50' r='5' fill='white' />
-				<circle cx='50' cy='50' r='5' fill='white' />
-			</g>
-		</mask>
-		<rect x='0' y='0' height='100' width='100' fill='url(#my-gradient-3)' mask='url(#my-mask-3)' opacity='0.1'/>
-	</svg>
-	<svg class="spot4" viewbox='0 0 100 100'>
-		<defs>
-			<filter id='goo_4'>
-				<feGaussianBlur in='SourceGraphic' stdDeviation='10' result='blur' />
-				<feColorMatrix in='blur' mode='matrix' values='1 0 0 0 0
-                                                           0 1 0 0 0
-                                                           0 0 1 0 0
-                                                           0 0 0 40 -3' result='goo' />
-				<feColorMatrix in='goo_1' mode='matrix' values='1 0 0 0 0
-                                                           0 1 0 0 0
-                                                           0 0 1 0 0
-                                                           0 0 0 10 -3' result='res' />
-				<feBlend in='SourceGraphic' in2='res' />
-			</filter>
-			<linearGradient id='my-gradient-4'>
-				<stop offset='5%'  stop-color='purple' />
-				<stop offset='95%' stop-color='silver' />
-			</linearGradient>
-		</defs>
-		<mask id='my-mask-4'>
-			<rect x='0' y='0' height='100' width='100' fill='black' />
-			<g filter='url(#goo_3)'>
-				<rect x='0' y='0' height='100' width='100' fill='transparent' />
-				<circle cx='40' cy='40' r='5' fill='white' />
-				<circle cx='65' cy='55' r='5' fill='white' />
-				<circle cx='45' cy='65' r='5' fill='white' />
-				<circle cx='30' cy='40' r='5' fill='white' />
-				<circle cx='55' cy='30' r='5' fill='white' />
-				<circle cx='60' cy='50' r='5' fill='white' />
-				<circle cx='50' cy='50' r='5' fill='white' />
-			</g>
-		</mask>
-		<rect x='0' y='0' height='100' width='100' fill='url(#my-gradient-4)' mask='url(#my-mask-4)' opacity='0.1'/>
-	</svg>
+<div class="menu">
+
 </div>
 <header>
 	<nav>
@@ -159,12 +26,12 @@
 			<img src="img/logo.png" alt="logo">
 		</div>
 		<ul>
-			<li><a href="#">Услуги</a></li>
-			<li><a href="#">Кто мы</a></li>
-			<li><a href="#">Контакты</a></li>
+			<li><a href="#service">Услуги</a></li>
+			<li><a href="#who_we_are">Кто мы</a></li>
+			<li><a href="#contact">Контакты</a></li>
 		</ul>
 		<div class="wrapper_menu_btn">
-			<div class="hamburger" id="hamburger-6">
+			<div class="hamburger animated" id="hamburger-6">
 				<span class="line"></span>
 				<span class="line"></span>
 				<span class="line"></span>
@@ -172,32 +39,260 @@
 		</div>
 	</nav>
 	<div class="lang_and_soc">
-
+		<div class="lang">
+			<ul>
+				<li><a href="#">En</a></li>
+				<li class="active"><a href="#">Рус</a></li>
+				<li><a href="#">Укр</a></li>
+			</ul>
+		</div>
+		<div class="soc">
+			<ul>
+				<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+				<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+				<li><a href="#"><i class="fab fa-behance"></i></a></li>
+			</ul>
+		</div>
 	</div>
 </header>
 	<div class="main">
 		<section class="page_1">
+			<div class="wrapper_page_1_titel">
+				<h1>Мы – креативное digital агентство. И наш креатив делает деньги.</h1>
+				<p>Мы создаем бренды, продвигаем бренды и делаем их лучшими в онлайне</p>
+				<div class="btn_wrapper">
+					<a href="#">Обсудить проект</a>
+					<div class="overflow_class">
+						<span class="page_1_btn_left"></span>
+					</div>
+					<div class="overflow_class">
+						<span class="page_1_btn_right"> </span>
+					</div>
 
-		</section>
-		<section>
+				</div>
 
+			</div>
+			<div class="well_big">
+				<p>WELL</p>
+			</div>
 		</section>
-		<section>
+		<section id="service" class="page_2">
 
-		</section>
-		<section>
+			<div class="service">
+				<div class="container">
+					<h2>Услуги</h2>
+					<div class="row">
+						<div class="col-6 col-md-3">
+							<p>MARKETIN STRATEGY</p>
+						</div>
+						<div class="col-6 col-md-3">
+							<p>ADVERTISING</p>
+							<ul>
+								<li>Google</li>
+								<li>Bing</li>
+								<li>Youtube</li>
+							</ul>
+						</div>
+						<div class="col-6 col-md-3">
+							<p>CREATIVE</p>
+							<ul>
+								<li>Рекламные кампании</li>
+								<li>ТВ-ролики</li>
+								<li>Контент для youtube</li>
+							</ul>
+						</div>
+						<div class="col-6 col-md-3">
+							<p>DESIGN</p>
+							<ul>
+								<li>Брендинг</li>
+								<li>Графический дизайн</li>
+								<li>Дизайн сайта</li>
+								<li>Moution design</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-6 col-md-3">
+							<p>GOOGLE ANALYTICS</p>
+						</div>
+						<div class="col-6 col-md-3">
+							<p>SMM</p>
+							<ul>
+								<li>Стратегия</li>
+								<li>Контент-менеджмент</li>
+								<li>Таргетированная рекламау</li>
+							</ul>
+						</div>
+						<div class="col-6 col-md-3">
+							<p>PR</p>
+							<ul>
+								<li>Консалтинг</li>
+								<li>Комплексная PR-кампания</li>
+								<li>Сотрудничество со СМИ</li>
+								<li>SERM</li>
+							</ul>
+						</div>
 
+					</div>
+				</div>
+			</div>
 		</section>
+		<section id="who_we_are" class="page_3">
+			<h2 class="who_name">Кто мы?</h2>
+			<div class="who_we_are">
+				<div class="for_slider">
+					<div class="col-md-6">
+						<div class="wrapper_for_name_to_slider">
+							<h2>Никита Шепель</h2>
+							<p>Никита очень любит креативить. Так сильно любит, что мы были вынуждены  установить дневной лимит. Кстати, проверяли -
+								ничего, кроме айкосов своих, не употребляет.</p>
+							<div class="soc_wrapper">
+								<ul>
+									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+									<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+					<div class="col-md-6">
+						<div class="wrapper_for_foto">
+							<img src="img/3.png" alt="Nikuta">
+							<div class="half_block_foto">
+								<span class="top"></span>
+							</div>
+							<div class="half_block_foto">
+								<span class="bottom"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="for_slider">
+					<div class="col-md-6">
+						<div class="wrapper_for_name_to_slider">
+							<h2>Никита Шепель</h2>
+							<p>Никита очень любит креативить. Так сильно любит, что мы были вынуждены  установить дневной лимит. Кстати, проверяли -
+								ничего, кроме айкосов своих, не употребляет.</p>
+							<div class="soc_wrapper">
+								<ul>
+									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+									<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+					<div class="col-md-6">
+						<div class="wrapper_for_foto">
+							<img src="img/3.png" alt="Nikuta">
+							<div class="half_block_foto">
+								<span class="top"></span>
+							</div>
+							<div class="half_block_foto">
+								<span class="bottom"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="for_slider">
+					<div class="col-md-6">
+						<div class="wrapper_for_name_to_slider">
+							<h2>Никита Шепель</h2>
+							<p>Никита очень любит креативить. Так сильно любит, что мы были вынуждены  установить дневной лимит. Кстати, проверяли -
+								ничего, кроме айкосов своих, не употребляет.</p>
+							<div class="soc_wrapper">
+								<ul>
+									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+									<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+					<div class="col-md-6">
+						<div class="wrapper_for_foto">
+							<img src="img/3.png" alt="Nikuta">
+							<div class="half_block_foto">
+								<span class="top"></span>
+							</div>
+							<div class="half_block_foto">
+								<span class="bottom"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="contact" class="page_4">
+			<div class="contact">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8">
+							<h2>В нашем арсенале: опыт, знания и огромное желание создавать крутые проекты!</h2>
+							<p>Мы не ходим на 9 на работу. Мы не заканчиваем работать в 6. И вообще слова «работа» как-то не про нас.
+								Мы просто делаем все в кайф. И честно верим, что это и называется успех как для нас, так и для вас.</p>
+							<form action="">
+								<div class="box-input">
+									<input type="text" name="name" required>
+									<label>Имя</label>
+								</div>
+								<div class="box-input">
+									<input type='tel' name="tel" required>
+									<label>Телефон</label>
+								</div>
+								<div class="box-input">
+									<input type="url" name="url" required>
+									<label>Соц. сети / сайт</label>
+								</div>
+								<div class="box-input">
+									<textarea name="massage" id="" cols="20" rows="10" required></textarea>
+									<label>Описание проекта</label>
+								</div>
+								<div class="btn_wrapper">
+									<button type="submit">Обсудить проект</button>
+									<div class="overflow_class">
+										<span class="page_1_btn_left"></span>
+									</div>
+									<div class="overflow_class">
+										<span class="page_1_btn_right"> </span>
+									</div>
+
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="logo_and_link">
+					<div class="logo_img">
+						<img src="img/logo_footer.png" alt="logo">
+					</div>
+					<div class="link">
+						<ul>
+							<li><a href="#service">Услуги</a></li>
+							<li><a href="#who_we_are">Кто мы</a></li>
+							<li><a href="#contact">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="tel_footer">
+					<p>saywell@gmail.com</p>
+					<p>+3 8 093 484 52 42 </p>
+				</div>
+			</div>
+		</section>
+
 	</div>
-<footer>
 
-</footer>
 	
 
 
 <script src="libs/jquery/jquery-2.1.3.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="libs/slick/slick.min.js"></script>
 <script src="libs/fullPage/jquery.onepage-scroll.js"></script>
 <script src="libs/waypoints/waypoints.min.js"></script>
 <script src="libs/animate/animate-css.js"></script>

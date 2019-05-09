@@ -1,8 +1,40 @@
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width : 1500px) {
+    .footer {
+        height: 150px !important;
+    }
+    .footer .logo_and_link .logo_img {
+        height: 20%;
+    }
+    .footer .logo_and_link .logo_img img {
+        width: 100px;
+    }
+    .footer .logo_and_link .link ul li a {
+        font-size: 14px;
+    }
+    .footer .tel_footer {
+        padding: 0px 0px 0px;
+    }
+    .page_4 .contact .btn_wrapper {
+        top: 15px;
+    }
+}
 @media only screen and (max-width : 1200px) {
+    .page_1 .wrapper_page_1_titel {
+        width: 90%;
 
+    }
+    .page_1 .well_big {
+        font-size: 350px;
+    }
+    header .lang_and_soc {
+        width: 90%;
+    }
+    header .lang_and_soc .lang, header .lang_and_soc .soc {
+        width: 35%;
+    }
 }
 
 /* Medium Devices, Desktops */
@@ -12,12 +44,115 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+    header nav ul {
+        width: 43%;
+    }
+    header nav ul li a {
+        font-size: 16px;
+        padding: 0px 13px;
+    }
+    header nav {
+        justify-content: space-between;
+    }
+    header nav ul {
+        margin-top: inherit;
+        width: 38%;
+    }
+    header nav .wrapper_menu_btn {
+        width: 20%;
+    }
+    .page_1 .well_big {
+        font-size: 280px;
+    }
+    .who_we_are .slick-dots {
+        width: 10%;
+    }
+    .who_we_are .col-md-6:nth-child(1) {
+        padding: 0px 0px 0px 50px;
+    }
+    .who_we_are .col-md-6:nth-child(1) .wrapper_for_name_to_slider {
+        padding: 0px 0px 0px 0px;
+    }
+    .page_4 .contact form {
+        width: 100%;
+    }
+    .footer .logo_and_link {
+        flex-direction: row;
+    }
+    .footer .logo_and_link .logo_img {
+        height: 100%;
+    }
+    .footer .logo_and_link .link {
+        height: 100%;
+    }
 
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+    header nav ul {
+        display: none;
+    }
+    .page_1 .wrapper_page_1_titel h1 {
+        font-size: 26px;
+    }
+    .page_1 .wrapper_page_1_titel .btn_wrapper {
+        width: 70%;
+    }
+    header .lang_and_soc {
+        display: none !important;
+    }
+    .service p {
+        font-size: 14px;
+    }
+    .service ul li {
+        font-size: 12px;
+    }
+    .service {
+        top: 54%;
+    }
+    .service h2 {
+        font-size: 26px;
+        padding: 0px;
+    }
+    .service p {
+        margin-bottom: 0rem;
+    }
+    .who_name {
+        top: 12%;
+        left: 5%;
+        padding: 10px 0px;
+        font-size: 26px;
+    }
+    .who_we_are .for_slider {
+        flex-direction: column;
+        top: -93px !important;
+    }
+    .who_we_are .col-md-6:nth-child(1) h2 {
+        font-size: 26px;
+    }
+    .who_we_are .col-md-6:nth-child(2) .wrapper_for_foto img {
+        width: 250px;
+    }
+    .who_we_are .col-md-6:nth-child(2) .wrapper_for_foto {
+        left: 125px;
+        top: 110px;
+    }
+    .page_4 .contact h2 {
+        font-size: 18px;
+    }
+    .page_4 .contact {
+        top: 48%;
+    }
+    .footer {
+        display: none;
+    }
+    .page_4 .contact .btn_wrapper {
+        width: 60%;
+    }
+    .page_4 .contact p {
+        font-size: 12px;
+    }
 }
 
 /* Custom, iPhone Retina */

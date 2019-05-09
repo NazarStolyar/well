@@ -6,6 +6,7 @@ body
 	font-size: 14px
 	min-width: 320px
 	position: relative
+	color: #222222
 	line-height: 1.42857
 	background: rgba(211,198,218,1)
 	background: -moz-linear-gradient(left, rgba(211,198,218,1) 0%, rgba(248,202,213,1) 100%)
@@ -26,9 +27,7 @@ body textarea:required:valid
 .hidden
 	display: none
 
-h1
-	font-size: 60px
-	font-weight: bold
+
 
 header
 	position: absolute
@@ -50,6 +49,7 @@ header
 			padding: 20px
 			img
 				height: 75px
+				animation-delay: 2s
 		ul
 			display: flex
 			justify-content: flex-end
@@ -58,10 +58,13 @@ header
 			height: 100%
 			li
 				list-style-type: none
+				animation-delay: 2s
 				a
 					color: black
 					font-size: 21px
 					padding: 0px 40px
+					&:hover
+						text-decoration: none
 		.wrapper_menu_btn
 			display: flex
 			align-items: center
@@ -72,20 +75,66 @@ header
 		width: 100%
 		height: 100px
 		bottom: 0px
-		border: 1px solid red
 		display: flex
-		z-index: 99999
+		z-index: 0
+		justify-content: space-between
+		.lang,
+		.soc
+			width: 20%
+			display: flex
+			align-items: center
+			justify-content: center
+			height: 100%
+			ul
+				display: flex
+				justify-content: space-between
+				li
+					list-style-type: none
+					padding: 10px
+					font-size: 20px
+					width: 50px
+					height: 50px
+					margin: 15px
+					a
+						color: #222222
+						cursor: pointer
+						&:hover
+							text-decoration: none
+		.soc
+			ul
+				li
+					border-radius: 50%
+					border: 1px solid
+					display: flex
+					align-items: center
+					justify-content: center
+					a
+						display: flex
+						align-items: center
+						justify-content: center
+					i
+						font-size: 24px
+		.lang
+			.active
+				border-radius: 50%
+				border: 1px solid
+				display: flex
+				align-items: center
+				justify-content: center
 
+.hamburger
+	opacity: 0
 
 .hamburger .line
 	width: 50px
 	height: 2px
-	background-color: black
+	background-color: white
 	display: block
 	margin: 8px auto
 	-webkit-transition: all 0.3s ease-in-out
 	-o-transition: all 0.3s ease-in-out
 	transition: all 0.3s ease-in-out
+
 
 
 .hamburger:hover
@@ -127,7 +176,7 @@ header
 	-webkit-transform: translateY(-9px) rotate(90deg)
 	-ms-transform: translateY(-9px) rotate(90deg)
 	-o-transform: translateY(-9px) rotate(90deg)
-	transform: translateY(-9px) rotate(90deg)
+	transform: translateY(-8px) rotate(90deg)
 
 
 //Start spot
@@ -419,7 +468,406 @@ header
 
 //End spot
 
+
+.page_1
+	.wrapper_page_1_titel
+		position: absolute
+		top: 40%
+		left: 50%
+		width: 58%
+		height: 25%
+		transform: translate(-50%, -50%)
+		z-index: 2
+		h1
+			font-size: 45px
+			font-weight: bold
+			animation-delay: 2s
+		p
+			margin: 20px 8px
+			font-weight: 300
+			letter-spacing: 1.1px
+			font-size: 20px
+			animation-delay: 2s
+		.btn_wrapper
+			width: 30%
+			height: 50px
+			position: relative
+			display: flex
+			align-items: center
+			justify-content: center
+			.overflow_class
+				width: 50%
+				display: flex
+				height: 100%
+				overflow: hidden
+				position: relative
+				&:nth-child(1)
+					left: 3px
+				&:nth-child(2)
+					left: 3px
+				span
+					display: flex
+					width: 100%
+					height: 100%
+					background-color: #222222
+				.page_1_btn_left
+					border-radius: 25px 0px 0px 25px
+					animation-delay: 2s
+					-webkit-box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.24)
+					-moz-box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.24)
+					box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.24)
+				.page_1_btn_right
+					border-radius: 0px 25px 25px 0px
+					animation-delay: 2s
+					-webkit-box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.24)
+					-moz-box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.24)
+					box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.24)
+		a
+			color: white
+			font-weight: bold
+			position: absolute
+			font-size: 20px
+			cursor: pointer
+			z-index: 3
+			animation-delay: 4s
+			&:hover
+				text-decoration: none
+				cursor: pointer
+	.well_big
+		width: 100%
+		height: 100%
+		position: absolute
+		display: flex
+		align-items: center
+		justify-content: center
+		font-size: 450px
+		font-weight: bold
+		color: rgba(255,255,255,0.2)
+		p
+			animation-delay: 1s
 	
 	
-	
-	
+.service
+	position: absolute
+	width: 100%
+	top: 45%
+	left: 50%
+	transform: translate(-50%, -50%)
+	h2
+		font-weight: bold
+		font-size: 46px
+		padding: 20px 0px
+		animation-delay: 1s
+		opacity: 0
+	p
+		font-size: 24px
+		font-weight: bold
+		padding: 0px 0px 0px 40px
+		animation-delay: 1.5s
+		opacity: 0
+	ul
+		li
+			list-style-type: none
+			font-size: 17px
+			font-weight: 300
+			animation-delay: 2s
+			opacity: 0
+
+.who_name
+	font-size: 46px
+	font-weight: bold
+	padding: 20px 0px
+	position: absolute
+	top: 20%
+	left: 11%
+	transform: translate(-50%,-50%)
+	animation-delay: 1s
+
+.who_we_are
+	position: absolute
+	display: flex
+	width: 100%
+	height: 100%
+	justify-content: center
+	align-items: center
+	.col-md-6:nth-child(1)
+		padding: 0px 0px 0px 160px
+		align-items: center
+		justify-content: center
+		display: flex
+		.wrapper_for_name_to_slider
+			padding: 0px 100px 0px 197px
+		h2
+			font-size: 60px
+			font-weight: bold
+			animation-delay: 2s
+		p
+			font-weight: 300
+			animation-delay: 1.5s
+		ul
+			display: flex
+			justify-content: flex-start
+			li
+				margin: 15px
+				padding: 15px
+				width: 40px
+				height: 40px
+				border: 1px solid #222222
+				border-radius: 50%
+				list-style-type: none
+				display: flex
+				align-items: center
+				justify-content: center
+				animation-delay: 1.5s
+				a
+					display: flex
+					align-items: center
+					justify-content: center
+					i
+						font-size: 24px
+						color: #222222
+	.for_slider
+		display: flex
+
+
+
+	.col-md-6:nth-child(2)
+		top: 0%
+		width: 35%
+		display: flex
+		.wrapper_for_foto
+			flex-direction: column
+			align-items: center
+			justify-content: center
+			position: absolute
+			display: flex
+			width: 100%
+			height: 100%
+			left: 0
+			img
+				width: 475px
+				position: absolute
+				z-index: 2
+				animation-delay: 1.5s
+			.half_block_foto
+				position: relative
+				left: 0px
+				width: 100%
+				height: 50%
+				display: flex
+				overflow: hidden
+				span
+					position: absolute
+					width: 100%
+					height: 100%
+					background-color: #cdc1d5
+					animation-delay: 2.2s
+					opacity: 0
+	.slick-list
+		position: absolute
+		height: 100% !important
+		width: 100%
+		.slick-track
+			top: 34% !important
+			left: -5% !important
+	.slick-dots
+		right: 0px
+		top: 0
+		width: 5%
+		height: 100%
+		display: flex !important
+		align-items: center
+		justify-content: center
+		flex-direction: column
+		li
+			width: 40px
+			height: 40px
+			margin: 10px
+			button
+				width: 40px
+				height: 40px
+			button::before
+				font-size: 70px
+				top: 50%
+				left: 45%
+				transform: translate(-50%, -50%)
+		li.slick-active
+			button
+				border: 1px solid #222222
+				border-radius: 50%
+.page_4
+	.contact
+		position: absolute
+		top: 45%
+		left: 50%
+		transform: translate(-50%, -50%)
+		display: flex
+		flex-direction: column
+		width: 100%
+		h2
+			font-weight: bold
+			font-size: 36px
+			animation-delay: 1s
+			opacity: 0
+		p
+			animation-delay: 1.5s
+			opacity: 0
+		form
+			display: flex
+			flex-direction: column
+			width: 70%
+			overflow: hidden
+			height: 100%
+			input:nth-child(1)
+				animation-delay: 2.2s
+			input:nth-child(2)
+				animation-delay: 2.6s
+			input:nth-child(3)
+				animation-delay: 2.9s
+			textarea
+				animation-delay: 3s
+			input,
+			textarea
+				padding: 10px 0px
+				margin: 3px
+				border-bottom: 1px solid #222222 !important
+				border: none
+				background-color: transparent
+				outline: none
+				opacity: 0
+			textarea
+				height: 100px
+			button
+				position: absolute
+				z-index: 2
+				color: white
+				background-color: transparent
+				font-size: 16px
+				font-weight: bold
+				border: none
+				opacity: 0
+				animation-delay: 4s
+			.box-input
+				position: relative
+				display: flex
+				flex-direction: column
+				label
+					position: absolute
+					top: 0px
+					left: 0px
+					padding: 15px 0px 0px 5px
+					margin-bottom: 0rem
+					animation-delay: 3s
+					opacity: 0
+					transition: all .5s ease
+					pointer-events: none
+				textarea:focus ~ label,
+				textarea:valid ~ label,
+				input:focus ~ label,
+				input:valid ~ label
+					top: -20px
+
+
+		.btn_wrapper
+			width: 45%
+			height: 50px
+			position: relative
+			display: flex
+			align-items: center
+			justify-content: center
+			top: 45px
+			.overflow_class
+				width: 50%
+				display: flex
+				height: 100%
+				overflow: hidden
+				position: relative
+				border: none
+
+				&:nth-child(1)
+					left: 3px
+				&:nth-child(2)
+					left: 3px
+				span
+					display: flex
+					width: 100%
+					height: 100%
+					background-color: #222222
+				.page_1_btn_left
+					border-radius: 25px 0px 0px 25px
+					animation-delay: 2s
+					-webkit-box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.24)
+					-moz-box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.24)
+					box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.24)
+				.page_1_btn_right
+					border-radius: 0px 25px 25px 0px
+					animation-delay: 2s
+					-webkit-box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.24)
+					-moz-box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.24)
+					box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.24)
+
+.footer
+	z-index: 2
+	position: absolute
+	bottom: 0px
+	left: 0px
+	height: 260px
+	width: 100%
+	display: flex
+	justify-content: space-between
+	background: rgba(33,33,33,1)
+	background: -moz-linear-gradient(left, rgba(33,33,33,1) 0%, rgba(59,59,59,1) 100%)
+	background: -webkit-linear-gradient(left, rgba(33,33,33,1) 0%, rgba(59,59,59,1) 100%)
+	background: -o-linear-gradient(left, rgba(33,33,33,1) 0%, rgba(59,59,59,1) 100%)
+	background: -ms-linear-gradient(left, rgba(33,33,33,1) 0%, rgba(59,59,59,1) 100%)
+	background: linear-gradient(to right, rgba(33,33,33,1) 0%, rgba(59,59,59,1) 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#212121', endColorstr='#3b3b3b', GradientType=1 )
+	.logo_and_link
+		width: 30%
+		display: flex
+		align-items: center
+		flex-direction: column
+		.logo_img
+			width: 100%
+			height: 40%
+			padding: 14px 30px
+		.link
+			display: flex
+			width: 100%
+			text-align: center
+			height: 60%
+			justify-content: center
+			padding: 10px 0px
+			ul
+				li
+					padding: 10px 0px
+					list-style-type: none
+					a
+						color: white
+						font-size: 18px
+						font-weight: bold
+						&:hover
+							text-decoration: none
+	.tel_footer
+		width: 40%
+		display: flex
+		align-items: center
+		justify-content: flex-end
+		flex-direction: column
+		padding: 0px 0px 40px
+		p
+			font-size: 22px
+			font-weight: bold
+			color: white
+
+.menu
+	position: fixed
+	height: 100%
+	width: 25%
+	border: 1px solid
+	right: -100%
+	top: 0
+	border-radius: 25px 0px 0px 25px
+	background: #171715
+	z-index: 99
+	transition: all 1s ease
