@@ -169,6 +169,45 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
+    .service {
+        top: 60%;
+        height: 85%;
+    }
+    .service p {
+        padding: 0px 0px 0px 0px;
+    }
+    .service ul {
+        padding: 0px;
+    }
+    .who_we_are .col-md-6:nth-child(2) .wrapper_for_foto img {
+        width: 200px;
+    }
+    .who_we_are .col-md-6:nth-child(2) .wrapper_for_foto {
+        top: 83px;
+    }
+    .who_we_are .slick-dots {
+        width: 18%;
+    }
+    .page_4 .contact {
+        top: 57%;
+    }
+    .page_4 .contact form {
+        height: 64%;
+    }
+    .page_4 .contact form button {
+        opacity: 1 !important;
+    }
+    .page_4 .contact .btn_wrapper .overflow_class .page_1_btn_left {
+        opacity: 1 !important;
+    }
+    .page_4 .contact .btn_wrapper .overflow_class .page_1_btn_right {
+        opacity: 1 !important;
+    }
+    .page_4 .contact .btn_wrapper {
+        height: 38px;
+        top: 3px;
+    }
+
 
 }
 
